@@ -57,6 +57,9 @@ app.use(bodyParser.json())
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
    
     res.send(200, JSON.parse(students));*/
+      res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+   
 
     console.log(req.body.length);
     var newData = req.body;
@@ -80,27 +83,14 @@ var oldData = JSON.parse(students);
 
 
 
-
-
-
-
-
-
-
-
   // start the server
   // read the data from json and start the server
   fs.readFile(TEACHER_FILE, function(err, data) {
    
        teachers = data;
-      
-
-      app.listen(PORT, function(){
-          console.log('app is running on 3000 port');
+       app.listen(PORT, function(){
+          console.log('app is running on 9000 port');
       })
-      
-
-   
   });
 
 

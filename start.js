@@ -1,4 +1,4 @@
-var PORT = process.argv[2] && parseInt(process.argv[2], 10) || 3000;
+var PORT = process.argv[2] && parseInt(process.argv[2], 10) || 9000;
 var STATIC_DIR = __dirname + '/';
 
 var TEACHER_FILE = __dirname + '/data/teachers.json';
