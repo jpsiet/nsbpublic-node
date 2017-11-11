@@ -1,4 +1,4 @@
-﻿This project is created in node js, express js  for nsbpublic  front  interaction to store data. 
+﻿This project is created in node js, express js, mongoose  for nsbpublic  front  interaction to store data. 
 some API list belows
 Student  List
 
